@@ -51,13 +51,16 @@ public class Empleado {
     }
 
     public void trabajar(){
-        System.out.println("El empleado se encuentra trabajando.");
+        System.out.println("El empleado " + this.nombre + " se encuentra trabajando actualmente.");
     }
     public void recibirSalario(){
-        System.out.println("Usted tiene: $" + salario);
+        double cuenta;
+        System.out.println("Su salario actual es de $" + salario);
+        cuenta = salario;
+        System.out.println("Usted tiene $" + cuenta + " en su cuenta.");
         System.out.println("Ingrese la cantidad de dinero que desea retirar: ");
         double retiro = sc.nextDouble();
         salario = salario - retiro;
-        System.out.println("El salario restante del empleado es de $" + salario);
+        System.out.println("Su dinero restante es $" + salario);
     }
 }

@@ -49,9 +49,9 @@ public class Pelicula {
     }
 
     public void reproducir(){
-        System.out.println("La pelicula se empezo a reproducir.");
+        System.out.println("La pelicula " + this.titulo + " se empezo a reproducir.");
     }
     public void detener(){
-        System.out.println("La pelicula se detuvo.");
+        System.out.println("La pelicula " + this.titulo + " se detuvo.");
     }
 }

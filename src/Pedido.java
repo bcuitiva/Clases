@@ -52,19 +52,17 @@ public class Pedido {
     }
 
     public void realizarPedido(){
-        System.out.println("Desea realizar un pedido?\n1. Si\2. No");
+        System.out.println("Desea realizar un pedido?\n1. Si\n2. No");
         int op = sc.nextInt();
         switch (op){
             case 1:
                 System.out.println("Bienvenido a su casillero internacional");
-                System.out.println("Ingrese su nombre:");
-                cliente = sc.next();
-                System.out.println("Ingrese la fecha en la que esta realizando el pedido (dd/mm/aa):");
-                fecha = sc.next();
+                System.out.println("Hola, " + this.cliente);
+                System.out.println("La fecha de su pedido sera: " + this.fecha);
                 System.out.println("Qué objeto desea retirar de su casillero?");
                 System.out.println("Actualmente tiene:\n1.MacBook\n2.Iphone\n3.Tarjeta grafica");
                 String pedido = sc.next();
-                System.out.println("Su pedido numero " + (numPedido ++) + " esta siendo procesado.");
+                System.out.println("Su pedido numero " + (numPedido) + " esta siendo procesado.");
                 break;
             case 2:
                 System.out.println("vuelva pronto!");
